@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282a36; /* Dark background for header */
+  color: #e4e4eb; /* Light text color */
+  padding: 15px 20px;
+}
+
+.header-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e4e4eb;
+}
+
+.header-button {
+  padding: 8px 16px;
+  border: 2px solid #70a1f0;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  background: none;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.header-button:hover {
+  background-color: #70a1f0;
+}
