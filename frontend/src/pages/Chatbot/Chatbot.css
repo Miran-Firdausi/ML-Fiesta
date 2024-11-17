@@ -1,109 +1,74 @@
-.chatbot-fullscreen {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  background-color: #1e1e2f;
-  color: #e4e4eb;
+.main-container {
+  height: calc(100vh - 66px);
+  background-image: url("https://images.deccanherald.com/deccanherald%2Fimport%2Fsites%2Fdh%2Ffiles%2Farticleimages%2F2022%2F02%2F15%2Ffile7imxpjtcj4keujqxcu0-1081618-1644899144.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.chat-container {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 800px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.message {
-  max-width: 70%;
-  padding: 12px;
-  border-radius: 12px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 4px;
-  word-wrap: break-word;
-}
-
-.message.user {
-  align-self: flex-end;
-  background-color: #70a1f0;
-  font-weight: 600;
-  color: #0a0f3d;
-  border-radius: 12px 12px 0 12px;
-}
-
-.message.bot {
-  align-self: flex-start;
-  background-color: #2e2f40;
-  border-radius: 12px 12px 12px 0;
+.avatar-container {
+  height: 100%;
 }
 
 .input-container {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 15px;
-  background-color: #222233;
-  border-top: 1px solid #33334d;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 400px;
+}
+
+.input-area div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input-container input[type="text"] {
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #909090;
+  width: 70%;
+  margin: 0;
 }
 
 .input-area {
+  position: relative;
   display: flex;
-  width: 800px;
-  margin: auto;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #33334d;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin-right: 10px;
-  outline: none;
-  background-color: #222233;
-  color: #e4e4eb;
-}
-
-input[type="text"]::placeholder {
-  color: #7e8390;
-}
-
-.send-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: #70a1f0;
-  color: #181e54;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #457aec;
-}
-
-button:focus,
-input[type="text"]:focus {
-  outline: none;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mic-button {
+  position: absolute;
+  top: -60px;
   background: none;
-  border: 2px solid #222233;
-  background-color: #70a1f0;
+  background-color: #357df1;
+  border: 2px solid #fff;
+  color: #fff;
   border-radius: 50%;
   color: #222233;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 5px 8px;
+  padding: 13px 16px;
   transition: color 0.2s;
   margin-right: 4px;
+}
+
+.mic-button:hover {
+  background-color: #2d5ec8;
 }
 
 @keyframes pulse {
@@ -120,4 +85,54 @@ input[type="text"]:focus {
 
 .mic-button.listening {
   animation: pulse 1.5s infinite;
+}
+
+.send-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  background-color: #70a1f0;
+  color: #181e54;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-container {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1em;
+  width: 400px;
+  height: 500px;
+  overflow-y: auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.chat-container h1 {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0;
+}
+
+.chat {
+  background-color: #ffffffdb;
+  margin-top: 10px;
+  color: #3d3d3d;
+  padding: 2px 15px;
+  border-radius: 12px;
+}
+
+.question {
+  color: #32b004;
+  font-weight: 600;
 }
