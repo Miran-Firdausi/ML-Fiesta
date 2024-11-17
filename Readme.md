@@ -2,6 +2,8 @@
 
 A robust conversational chatbot system for processing and understanding audio resources related to sandalwood cultivation. The project leverages **Automatic Speech Recognition (ASR)**, **Natural Language Processing (NLP)**, and **3D avatars** to provide an interactive and user-friendly experience for answering user queries in Kannada.  
 
+![Screenshot 2024-11-17 224127](https://github.com/user-attachments/assets/00085d11-f4e1-445f-b19e-933d5bd33028)
+
 ---
 
 ## **Features**  
