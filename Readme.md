@@ -1,7 +1,9 @@
-#**Introduction**
+##**Introduction**
+
 Welcome to the Sandalwood Cultivation Knowledge Advisor, a project created by Advik Sharma, Miraan Firdausi, and Meet Shah during the ML Fiesta Hackathon. This innovative AI-powered conversational system is designed to disseminate comprehensive knowledge about sandalwood cultivation, making it accessible to farmers, agriculturists, and enthusiasts. The goal is to preserve and share valuable information about sandalwood farming practices in a natural, engaging, and interactive manner.
 
-#**Project Overview**
+##**Project Overview**
+
 Sandalwood cultivation requires precise knowledge of soil types, climate, planting techniques, maintenance, and harvesting. Unfortunately, this expertise is often scattered or inaccessible. Our solution bridges this gap by using advanced AI technologies to create a conversational assistant that acts like a knowledgeable teacher. This system enables users to learn about sandalwood cultivation through natural language conversations, either in text or audio format.
 # **Sandalwood Cultivation Query System**  
 
